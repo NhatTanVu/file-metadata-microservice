@@ -3,28 +3,38 @@
 <html>
 
    <head>
-      <title>Clementine.js - The elegant and lightweight full-stack boilerplate.</title>
+      <title>Image Search Abstraction Layer</title>
       <link href="http://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet" type="text/css">
       <link href="/public/css/main.css" rel="stylesheet" type="text/css">  
    </head>
 
    <body>
       <div class="container">
-         <img src="/public/img/clementine_150.png" />
-         <br />
-         <p class="clementine-text">Clementine.js</p>
-      </div>
-
-      <div class="container">
-         <p>You have clicked the button <span id="click-nbr"></span> times.</p>   
-         <br />
-         <div class="btn-container">
-            <button type="submit" class="btn btn-add">CLICK ME!</button>
-            <button class="btn btn-delete">RESET</button>
+         <h1>API Basejump: Image Search Abstraction Layer</h1>
+         <div>
+            <h2>User stories</h2>
+            <div>
+               <ol>
+                  <li>I can get the image URLs, alt text and page urls for a set of images relating to a given search string.</li>
+                  <li>I can paginate through the responses by adding a ?offset=2 parameter to the URL.</li>
+                  <li>I can get a list of the most recently submitted search strings.</li>
+               </ol>
+            </div>
+         </div>
+         <div>
+            <h2>Get image URLs sample</h2>
+            <div>
+               <div><a href="https://tan-imgsearch.herokuapp.com/api/imagesearch/batman?offset=5" target="_blank">https://tan-imgsearch.herokuapp.com/api/imagesearch/batman?offset=5</a></div>
+               <div><a href="https://tan-imgsearch.herokuapp.com/api/imagesearch/lolcats%20funny?offset=10" target="_blank">https://tan-imgsearch.herokuapp.com/api/imagesearch/lolcats%20funny?offset=10</a></div>
+            </div>
+         </div>
+         <div>
+            <h2>Get latest search strings sample</h2>
+            <div>
+               <a href="https://tan-imgsearch.herokuapp.com/api/latest/imagesearch" target="_blank">https://tan-imgsearch.herokuapp.com/api/latest/imagesearch</a>
+            </div>
          </div>
       </div>
-
-      <script type="text/javascript" src="/controllers/clickController.client.js"></script>   
    </body>
 
 </html>

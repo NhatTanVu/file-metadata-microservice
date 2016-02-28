@@ -8,7 +8,6 @@
 
 ## Get image URLs sample
 > https://tan-imgsearch.herokuapp.com/api/imagesearch/batman?offset=5
-
 > https://tan-imgsearch.herokuapp.com/api/imagesearch/lolcats%20funny?offset=10
 
 ## Get latest search strings sample

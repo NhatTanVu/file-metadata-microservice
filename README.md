@@ -1,4 +1,4 @@
-# API Basejump: URL Shortener microservice
+# API Basejump: Image Search Abstraction Layer
 
 ## User stories
 
@@ -8,13 +8,13 @@
 
 ## Get image URLs sample
 ```
-[https://tan-imgsearch.herokuapp.com/api/imagesearch/batman?offset=5]
-[https://tan-imgsearch.herokuapp.com/api/imagesearch/lolcats%20funny?offset=10]
+[https://tan-imgsearch.herokuapp.com/api/imagesearch/batman?offset=5](https://tan-imgsearch.herokuapp.com/api/imagesearch/batman?offset=5)
+[https://tan-imgsearch.herokuapp.com/api/imagesearch/lolcats%20funny?offset=10](https://tan-imgsearch.herokuapp.com/api/imagesearch/lolcats%20funny?offset=10)
 ```
 
 ## Get latest search strings sample
 ```
-[https://tan-imgsearch.herokuapp.com/api/latest/imagesearch]
+[https://tan-imgsearch.herokuapp.com/api/latest/imagesearch](https://tan-imgsearch.herokuapp.com/api/latest/imagesearch)
 ```
 
 ## License

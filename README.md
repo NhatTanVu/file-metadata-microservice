@@ -1,4 +1,4 @@
-# API Basejump: Image Search Abstraction Layer
+# API Basejump: File Metadata Microservice
 
 ## User stories
 

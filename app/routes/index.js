@@ -1,24 +1,15 @@
 'use strict';
 
-var ClickHandler = require(process.cwd() + '/app/controllers/clickHandler.server.js');
-var SearchAPI = require(process.cwd() + '/app/controllers/api.imagesearch.js');
+var FileMetadataService = require(process.cwd() + '/app/controllers/fileMetadataService.js');
 
-module.exports = function (app, db) {
-   var clickHandler = new ClickHandler(db);
-   var searchAPI = new SearchAPI(db);
+module.exports = function (app, upload) {
+   var fileMetadataService = new FileMetadataService();
 
    app.route('/')
-      .get(function (req, res) {
+      .get(function (req, res, next) {
          res.sendFile(process.cwd() + '/public/index.html');
       });
 
-   app.route('/api/clicks')
-      .get(clickHandler.getClicks)
-      .post(clickHandler.addClick)
-      .delete(clickHandler.resetClicks);
-      
-   app.route('/api/imagesearch/:q')
-      .get(searchAPI.searchImage);
-   app.route('/api/latest/imagesearch')
-      .get(searchAPI.getLatestSearchs);
+   app.route('/uploadFile')
+      .post(upload.single('uploadedFile'), fileMetadataService.uploadFile);
 };

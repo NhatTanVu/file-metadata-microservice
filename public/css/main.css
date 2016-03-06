@@ -9,3 +9,24 @@ body {
 	margin: auto;
 	width: 80%;
 }
+
+#input #uploadFileWrapper {
+	border: 1px solid #DDD;
+	padding: 2px;
+	padding-bottom: 3px;
+}
+#input #uploadButton {
+	margin-left: 20px;
+	padding: 2px;
+}
+
+#output {
+	display: none;
+	border-left: 5px solid #DDD;
+	padding: 10px;
+}
+
+#output .row label {
+	width: 80px;
+	display: inline-block;
+}
